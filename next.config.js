@@ -4,11 +4,19 @@ const withCSS = require('@zeit/next-css');
 const nextConfig = {
 	webpack(config) {
 		config.module.rules.push({
-			test: /\.svg$/,
+			test: /\.(png|jpe?g|gif|svg)$/i,
 			issuer: {
 				test: /\.(js|ts)x?$/,
 			},
-			use: ['@svgr/webpack'],
+			use: [
+				{
+					loader: '@svgr/webpack',
+					options: {
+						esModule: true,
+					},
+				},
+				
+			],
 		});
 
 		return config;

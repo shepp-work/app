@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import ImageLogo from '../../assets/logo.svg';
 
-export const Header = styled.header`
+export const Nav = styled.header`
 	background: #fff;
 	color: #484848;
 	display: flex;
@@ -15,7 +15,7 @@ export const Logo = styled(ImageLogo)`
 	
 `;
 
-export const Nav = styled.nav`
+export const Menu = styled.nav`
 	
 `;
 
