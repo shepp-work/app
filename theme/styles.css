@@ -1,0 +1,16 @@
+html,
+body {
+    display: flex;
+    height: 100%;
+    background: #e5e5e5;
+    font-family: 'Ubuntu', sans-serif; 
+}
+
+body,
+#root {
+    flex: 1;
+    padding: 0;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+}
